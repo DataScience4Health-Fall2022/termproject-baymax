@@ -5,4 +5,22 @@ dataBLOSUM62 = [[4, 0, -2, -1, -2, 0, -2, -1, -1, -1, -1, -2, -1, -1, -1, 1, 0, 
 
 df_BLOSUM62 = pd.DataFrame(dataBLOSUM62, columns=['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y'], index = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y'])
 
-print(df_BLOSUM62['A']['Y'])
+# for index, row in data.iterrows():
+#     if pd.isna(row['BLOSUM62']) and not pd.isna(row['Amino_acids']):
+#         amino_acid_change = row['Amino_acids']
+#         print(amino_acid_change)
+#         start_and_end = amino_acid_change.split('/')
+
+#         startAA = start_and_end[0]
+#         # Check for if it's like an A -> A transition
+#         if len(start_and_end) < 2:
+#             endAA = start_and_end[0]
+#         else: 
+#             endAA = start_and_end[1]
+#         print(startAA + ":" + endAA)
+#         blosumScore = df_BLOSUM62[startAA][endAA]
+#         print(blosumScore)
+
+
+
+# print(data['BLOSUM62'].isnull().values.any())
